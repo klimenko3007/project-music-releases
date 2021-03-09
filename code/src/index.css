@@ -5,9 +5,49 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background: black;
+  color: white;
 }
+.cards-container{
+  display: grid;
+  width: 80%;
+  margin:auto
+}
+.image-container{
+  overflow: hidden;
+  width: 100%;
+}
+.image{
+  width: 100%;
+  object-fit: cover;
+}
+.album-card{
+  margin-bottom: 30px;
+}
+
+.artist-name{
+  color: white;
+  text-decoration: none;
+  margin-right: 5px;
+}
+
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
+}
+
+
+@media (min-width: 658px){
+  .cards-container{
+    grid-template-columns: 1fr 1fr;
+    column-gap: 20px;
+  }
+}
+
+@media (min-width: 1024px){
+  .cards-container{
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    column-gap: 20px;
+  }
 }
