@@ -11,7 +11,7 @@ body {
 .cards-container{
   display: grid;
   width: 80%;
-  margin:auto
+  margin: auto;
 }
 .image-container{
   overflow: hidden;
