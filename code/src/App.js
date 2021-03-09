@@ -1,24 +1,41 @@
 import React from 'react'
 import data from './data.json'
 import {Album} from './Album.js'
+import {Artist} from 'Artist.js'
 
 console.log(data)
 const albumArray = data.albums.items
-console.log(albumArray)
-const albumPictureArray = albumArray.map(album =>{
-  return album.images[0].url
-})
-console.log(albumPictureArray)
+// console.log(albumArray)
+// const albumPictureArray = albumArray.map(album =>{
+//   return album.images[0].url
+// })
+// console.log(albumPictureArray)
+// const albumArtists = albumArray.map( album => {
+//   return album.artists
+// })
+// console.log(albumArtists)
+// const AlbumArtistName = albumArtists.map((album) => {
+//   const newArray = album.map( artist =>{
+//     return artist.name
+//   } )
+//   return newArray
+// })
+// console.log(AlbumArtistName)
 
 
 export const App = () => {
   return (
     <div>
-      Find me in src/app.js!
       {albumArray.map((album, index) =>{
-        return <Album key={index} name={album.name} picture={album.images[0].url} artist={album.artists[0].name}/>
+        return (
+          <div>
+            <Album key={index} name={album.name} picture={album.images[1].url}/>
+            <Artist name={album.release_date} link={album.href}/>
+          </div>
+          )
       })}
       
     </div>
   )
 }
+
