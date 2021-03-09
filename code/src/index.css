@@ -1,3 +1,7 @@
+html{
+  margin:0;
+}
+
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
@@ -10,4 +14,69 @@ body {
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
+}
+
+.header{
+  background-color: #444444;
+  color: #ffff;
+  margin: 0;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  height: 80px;
+  padding-top: 40px;
+  width: 100%;
+  margin-bottom: 20px;
+}
+.hamburger {
+  width: 70px;
+  justify-self: end;
+}
+.nav{
+  justify-self: end;
+  display:none;
+}
+.nav-item{
+  margin-right: 20px;
+  text-decoration: none;
+  color: #ffff;
+}
+.footer{
+  background-color: #444444;
+  color: #ffff;
+  text-align: center;
+  margin: 0;
+  padding: 15px;
+}
+.socialmedia{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  justify-items: center;
+  /* border: 2px solid pink; */
+  width: 100%;
+
+}
+.button {
+  border: 1px solid green;
+  width: 100%;
+  align-items: center;
+}
+.copyright{
+  margin: 0;
+}
+.copyright p {
+  margin: 0;
+  padding-top: 10px;
+  padding-bottom: 20px;
+}
+@media (min-width: 648px) {
+  
+  .header{
+    grid-template-columns: 1fr 2fr;
+  }
+  .hamburger {
+    display: none;
+  }
+  .nav {
+    display: block;
+  }
 }
