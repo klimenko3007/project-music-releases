@@ -1,5 +1,5 @@
 import React from 'react';
-// import {Artist} from 'Artist.js'
+import {Artist} from 'Artist.js'
 
 // const albumArray = data.albums.items
 // const albumArtists = albumArray.map( album => {
@@ -13,14 +13,24 @@ import React from 'react';
 // })
 // console.log(albumArtistName)
 
-export const Album = (prop) => {
+export const Album = (album_data) => {
     return (
         <div>
-            <img src={prop.picture} alt="Album"/>
-            <h2>{prop.name}</h2> 
+            <img src={album_data.picture} alt="Album"/>
+            <h2>{album_data.name}</h2>
+            {album_data.artists.map((artist_data, index) =>
+              {
+              return <Artist key={index} name={artist_data.name} url={artist_data.external_urls.spotify}/>
+              }
+            )}
+
         </div>        
     )
 }
+//.
+
+
+
 // {albumArtistName.map((album) =>{   
 //   return album.map((name, index) => {
 //       return <Artist key={index} name ={name} link={index}/>

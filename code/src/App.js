@@ -1,7 +1,7 @@
 import React from 'react'
 import data from './data.json'
 import {Album} from './Album.js'
-import {Artist} from 'Artist.js'
+//import {Artist} from 'Artist.js'
 
 console.log(data)
 const albumArray = data.albums.items
@@ -28,9 +28,11 @@ export const App = () => {
     <div>
       {albumArray.map((album, index) =>{
         return (
-          <div>
-            <Album key={index} name={album.name} picture={album.images[1].url}/>
-            <Artist name={album.release_date} link={album.href}/>
+          <div key={index}>
+            <Album  key={index} 
+                    name={album.name} 
+                    picture={album.images[1].url} 
+                    artists={album.artists}/>
           </div>
           )
       })}

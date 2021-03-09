@@ -1,9 +1,9 @@
 import React from 'react'; 
 
-export const Artist = prop => {
+export const Artist = (artist_data) => {
     return(
-        <a href={prop.link}>
-            <p>{prop.name}</p>
+        <a href={artist_data.url}>
+            {artist_data.name}
         </a>
     )
 }
