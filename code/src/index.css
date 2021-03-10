@@ -40,6 +40,12 @@ code {
   text-decoration: none;
   color: #ffff;
 }
+.icon{
+  width: 40px;
+}
+.album-name {
+  display: block;
+}
 .footer{
   background-color: #444444;
   color: #ffff;
