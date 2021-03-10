@@ -51,12 +51,14 @@ body {
   z-index: 1;
   width: 60px;
   margin: 10px;
-  filter: invert(100%)
+  filter: invert(100%);
+  opacity: 0.5;
   /* background-color: white; */
 }
 
 .play-button:hover {
   transform: scale(1.3);
+  opacity: 1;
 }
 .heart {
   filter: invert(100%);
@@ -69,6 +71,7 @@ body {
   width: 30px;
   z-index: 1;
   margin: 10px;
+  opacity: 0.7;
 }
 .image{
   width: 100%;
