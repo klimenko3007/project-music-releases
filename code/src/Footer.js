@@ -4,13 +4,20 @@ const Footer= () => {
         <footer className="footer">
             <div className="socialmedia">
                 <div className="button">
-                    <a href="#" className="fa fa-facebook"></a>
+                    <a href="https://www.facebook.com"  title="Facebook">
+                        <i className="fa fa-facebook"></i>
+                    </a>
                 </div>
                 <div className="button">
-                    <a href="#" className="fa fa-instagram"></a>
+                    <a href="https://www.instagram.com"  title="Instagram">
+                        <i className="fa fa-instagram"></i>
+                    </a>
                 </div>
                 <div className="button">
-                    <a href="#" className="fa fa-twitter"></a>
+                    <a href="https://twitter.com" title="Twitter">
+                        <i className="fa fa-twitter"></i>
+                    </a>
+                        
                 </div>
             </div>
             <div className="copyright">
