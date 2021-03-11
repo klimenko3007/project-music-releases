@@ -8,7 +8,7 @@ const AlbumImage = (prop) => {
                   <div className="icons-container">
                     <div className="hover-container">
                         <img className="heart" src="./icons/heart.svg" alt="heart icon"/>
-                        <a href={prop.album.external_urls.spotify} title="link to spotify" target="_blank">
+                        <a href={prop.album.external_urls.spotify} title="link to spotify" target="_blank" rel="noopener noreferrer">
                             <img className="play" src="./icons/play.svg" alt="play button" />
                         </a>
                         <img className="dots" src="./icons/dots.svg" alt="dots icon" />
