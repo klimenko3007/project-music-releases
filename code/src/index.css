@@ -8,6 +8,43 @@ body {
   background: black;
   color: white;
 }
+h1 {
+  display: grid;
+  width: 80%;
+  margin: auto;
+  padding-bottom: 20px;
+}
+.playlist-image{
+  width: 100px;
+}
+.playlist-card{
+  margin: 10px;
+}
+.aside {
+  width: 80%;
+  display: grid;
+  margin: auto;
+}
+.aside-title{
+  display: block;
+  width: 100%;
+}
+.playlist-container{
+  width: 100%;
+  overflow-x: scroll;
+  display: flex;
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;
+  
+}
+.playlist-container:hover{  /* IE and Edge */
+  scrollbar-width: thin;
+  scrollbar-color: #0A4C95; 
+}
+/* .playlist-container::-webkit-scrollbar{
+  background-color: rgba(128, 128, 128, 0.3);
+  height: 1px;
+} */
 .cards-container{
   display: grid;
   width: 80%;
@@ -89,7 +126,20 @@ body {
   margin-right: 5px;
 }
 
-
+.artist-name:not(:first-child, :last-child):before{
+  color: #a0a0a0;
+  content: ", ";
+}
+.artist-name:last-child::before {
+  content: " & ";
+  color: #a0a0a0;
+}
+.artist-name:only-child::before { 
+  content: ""; 
+}
+/* .artist-name:first-child {
+  color: red;
+} */
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
@@ -102,6 +152,23 @@ code {
     grid-template-columns: 1fr 1fr;
     column-gap: 20px;
   }
+  .content-container {
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    justify-items: start;
+  }
+  .playlist-container{
+    flex-direction: column;
+    align-self: start;
+    overflow-x: hidden;
+  }
+  .aside{
+    display: flex;
+    flex-direction: column;
+    align-self: start;
+    margin: 0 0 0 20px;
+  }
+
 }
 
 @media (min-width: 1024px){

@@ -1,9 +1,10 @@
 import React from 'react' 
 
-const AlbumImage = (album) => {
+const AlbumImage = (prop) => {
+    //console.log("Image",prop)
     return (
         <div className="image-container">
-            <img className="image" src={album.picture} alt="Album"
+            <img className="image" src={prop.picture.url} alt="Album"
             />
             <div className="buttons-container">
                 <div className="wrapper">
