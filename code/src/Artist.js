@@ -1,5 +1,6 @@
 import React from 'react';
 
+
 const Artist = (prop) => {
     console.log("Artist", prop)
     return (

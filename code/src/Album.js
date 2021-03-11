@@ -8,9 +8,11 @@ export const Album = prop => {
         <div className="album-card">
             <AlbumImage album={prop.album_data}/>
             <a href={prop.album_data.external_urls.spotify} className="album-name" target="_blank" rel="noopener noreferrer">{prop.album_data.name} </a>
-            {prop.album_data.artists.map(item => {
+            <div className="artist-container">
+            {prop.album_data.artists.map((item) => {
                  return <Artist key={item.id} artist={item}/>
-            })}  
+            })}
+            </div>  
         </div>        
     )
 }
