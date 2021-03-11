@@ -152,6 +152,17 @@ code {
     text-decoration-thickness: 2px;
     color: #ffffff;
 }
+/* .artist-name:not(:first-child, :last-child)::before {
+  color: #a0a0a0;
+  content: ", ";
+}
+.artist-name:last-child::before {
+  content: " & ";
+  color: #a0a0a0;
+}
+.artist-name:only-child::before { 
+  content: ""; 
+} */
 
 .footer{
   background-color: #444444;
