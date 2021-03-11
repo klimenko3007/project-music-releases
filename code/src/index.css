@@ -101,6 +101,15 @@ code {
 .icons-container:hover > .hover-container {
   display: flex;
 }
+
+.icons-container:focus {
+  background-color: rgba(75, 75, 75, 0.5);
+}
+
+.icons-container:focus > .hover-container {
+  display: flex;
+}
+
 .hover-container{
   display: flex;
   align-items: center;
@@ -118,6 +127,10 @@ code {
 }
 
 .play:hover {
+  transform: scale(1.3);
+  opacity: 1;
+}
+.play:focus {
   transform: scale(1.3);
   opacity: 1;
 }
