@@ -1,10 +1,10 @@
-import React from 'react'
-import data from './data.json'
-import stretchGoal from './stretch-goal.json' 
-import Footer from './Components/Footer.js'
-import Header from './Components/Header.js'
-import Playlist from './Components/Playlist.js'
-import Section from './Components/Section.js'
+import React from 'react';
+import data from './data.json';
+import stretchGoal from './stretch-goal.json'; 
+import Footer from './Components/Footer.js';
+import Header from './Components/Header.js';
+import Playlist from './Components/Playlist.js';
+import Section from './Components/Section.js';
 
 // Array of playlists for stretchgoals
 const playlistArray =stretchGoal.playlists.items

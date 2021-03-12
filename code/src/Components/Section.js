@@ -1,5 +1,6 @@
 import React from 'react';
-import { Album } from './Album.js';
+import Album from './Album.js';
+
 const Section = (props) => {
     return (
         <section className="section">

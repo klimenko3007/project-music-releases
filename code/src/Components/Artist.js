@@ -11,12 +11,10 @@ const generateDelimiter = (index, length) => {
 };
 
 const Artist = (prop) => {
-    //console.log("Artist", prop)
-    return (
-        <a className="artist-name" title="link to the artist" target="_blank" rel="noopener noreferrer" href={prop.artist.external_urls.spotify}>
-            {prop.artist.name}
-            {generateDelimiter(prop.artist_index, prop.artist_array.length)}
-        </a> 
-    )
-}
+  return (
+    <a className="artist-name" title="link to the artist" target="_blank" rel="noopener noreferrer" href={prop.artist.external_urls.spotify}>
+        {prop.artist.name}
+        {generateDelimiter(prop.artist_index, prop.artist_array.length)}
+    </a>
+  )}
 export default Artist;
