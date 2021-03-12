@@ -30,7 +30,7 @@ export const App = () => {
       <section className="section">
         <h1 className="section-heading">Albums</h1>
         <div className="album-container">
-          {singlesArray.map((album) =>{
+          {onlyAlbumArray.map((album) =>{
             return <Album key={album.id} album_data={album}/>
         })}
       </div>
