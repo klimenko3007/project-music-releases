@@ -1,7 +1,7 @@
 import React from 'react';
 
 const AlbumImage = (prop) => {
-    console.log('Image',prop)
+    //console.log('Image',prop)
     return (
               <div className="image-container">    
                   <img className="album-image"src={prop.album.images[1].url} alt="Album"/>

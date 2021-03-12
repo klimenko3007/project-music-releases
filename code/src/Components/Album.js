@@ -3,7 +3,7 @@ import Artist from './Artist.js';
 import AlbumImage from './AlbumImage.js';
 
 export const Album = prop => {
-    console.log("Album", prop)
+    //console.log("Album", prop)
     return (
         <div className="album-card">
             <AlbumImage album={prop.album_data}/>

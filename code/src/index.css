@@ -57,7 +57,13 @@ code {
   display: inline;
 }
 
-
+.section-heading {
+  color: #ffffff;
+  display: grid;
+  width: 80%;
+  margin: auto;
+  padding-bottom: 15px;
+}
 .album-container {
   display: grid;
   width: 80%;
