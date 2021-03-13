@@ -12,11 +12,26 @@ console.log(albumArray)
 const singlesArray = albumArray.filter(album => {
   return (album.album_type.includes("single"))
 })
-//console.log(singlesArray)
+
+const comparisonFunction = (a, b)=>{
+  return new Date(b.release_date) - new Date(a.release_date);
+  
+  // console.log(new Date(a.release_date))
+  // if(new Date(a.release_date) < new Date(b.release_date))
+  // { return -1}
+  // if (new Date(a.release_date) < new Date(b.release_date)) {
+  //   return 1
+  // }
+  // return 0
+}
+
+singlesArray.sort(comparisonFunction)
+
 
 const OnlyAlbumsArray = albumArray.filter(album =>{
   return (album.album_type.includes("album"))
 })
+OnlyAlbumsArray.sort(comparisonFunction)
 
 const playListArray = stretch.playlists.items
 

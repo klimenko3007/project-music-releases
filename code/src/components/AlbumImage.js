@@ -4,8 +4,6 @@ const AlbumImage = (prop) => {
     //console.log("Image",prop)
     return (
         <div className="image-container">
-            <img className="image" src={prop.picture.url} alt="Album"
-            />
             <div className="buttons-container">
                 <div className="wrapper">
                     <img className="heart" src="./icons/heart.svg" alt="Heart"/>
@@ -13,6 +11,8 @@ const AlbumImage = (prop) => {
                     <img className="dots" src="./icons/dots.svg" alt="dots" />
                 </div>
             </div>
+            <img className="image" src={prop.picture.url} alt="Album"/>
+            
         </div>
     )
 
