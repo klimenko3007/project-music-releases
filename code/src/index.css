@@ -39,7 +39,7 @@ h1 {
 }
 .playlist-container:hover{  /* IE and Edge */
   scrollbar-width: thin;
-  scrollbar-color: #0A4C95; 
+  scrollbar-color: #0a4b953d; 
 }
 /* .playlist-container::-webkit-scrollbar{
   background-color: rgba(128, 128, 128, 0.3);
@@ -106,7 +106,7 @@ h1 {
 .play-button:hover {
   transform: scale(1.3);
   opacity: 1;
-  transition: 1s;
+  transition: 1s ease-in-out;
 }
 .heart {
   filter: invert(100%);
