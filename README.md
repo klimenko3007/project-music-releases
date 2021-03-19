@@ -18,4 +18,4 @@ If we had more time we would perhaps add some more information from the API resp
 ​
 ## View it live
 ​
-https://fervent-noyce-bb7e43.netlify.app/
+https://music-release-project.netlify.app
