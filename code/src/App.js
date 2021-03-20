@@ -1,4 +1,5 @@
 import React from 'react';
+
 import data from './data.json';
 import stretchGoal from './stretch-goal.json'; 
 import Footer from './Components/Footer.js';

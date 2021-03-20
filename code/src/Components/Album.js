@@ -1,4 +1,5 @@
 import React from 'react';
+
 import Artist from './Artist.js';
 import AlbumImage from './AlbumImage.js';
 
